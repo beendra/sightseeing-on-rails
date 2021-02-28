@@ -1,0 +1,15 @@
+<h1> Create a new user </h1>
+
+<%= form_for @user do |u| %>
+    <%= u.label :name %>
+    <%= u.text_field :name %>
+    <%= u.submit "Create Profile" %>
+<% end %>
+
+<br>
+
+<% if flash[:error] %>
+    <% flash[:error].each do |e| %>
+        <%= e %>
+    <% end %>
+<% end %>

@@ -1,0 +1,6 @@
+<h1> <%= @user.name %> </h1>
+
+<%= link_to "New York", ny_neighborhoods_path %> <br>
+<%= link_to "Chicago", chi_neighborhoods_path %> <br><br>
+
+<%= button_to "Delete User", delete_path(@user), method: :delete %>
